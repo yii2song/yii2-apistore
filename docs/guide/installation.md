@@ -20,10 +20,14 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 该扩展安装后，你需要设置验证客户端集合应用程序组件：
 
 ```php
-'services' => [
+'components' => [
     'apiClientCollection' => [
         'class' => 'xutongle\apistore\Collection',
         'apis' => [
+            'baidu' => [
+                'class' => 'xutongle\apistore\Baidu',
+                'apiKey'=>'aaaaa',
+            ],
             'mobile' => [
                 'class' => 'xutongle\apistore\clients\Mobile',
                 'apiKey'=>'aaaaa',
