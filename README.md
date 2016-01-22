@@ -28,7 +28,7 @@ or add
 "xutongle/yii2-apistore": ">=1.0.0"
 ```
 
-to the `require` section of your composer.json.
+to the `require` section of your `composer.json`.
 
 注意:本扩展的二次开发非常简单,我只做了百度的手机归属地查询和身份证查询,这两个就一个方法,只要继承Baidu类并实现get方法即可无限扩展百度的API,
 当然也有简单的办法,即直接使用`Baidu`类作为api类,获取到实例后如下即可:
@@ -37,4 +37,4 @@ $baidu = Yii::$app->apiClientCollection->getApi('baidu');
 $response = $baidu->api('apistore/mobilenumber/mobilenumber', 'GET', ['phone' => $mobile]);
 var_dump($response);
 ````
-欢迎fork本代码,并将你的客户端p.ull给我,我讲更新的到新版里面,另外只要继承基类做类似`Baidu`类的实现,即可实现其他非百度ApiStore平台Api接入
+欢迎fork本代码,并将你的客户端pull给我,我更新到新版里面,另外只要继承基类做类似`Baidu`类的实现,即可实现其他非百度ApiStore平台Api接入
