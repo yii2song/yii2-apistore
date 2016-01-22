@@ -1,5 +1,5 @@
-# leaps console command
-/leaps
+# yii console command
+/yii
 
 # phpstorm project files
 .idea
