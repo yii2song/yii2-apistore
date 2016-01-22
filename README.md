@@ -1,4 +1,4 @@
-用于 Yii2 的 ApiStore 扩展
+适用于 Yii2 的 ApiStore SDK扩展
 ==============================
 
 该扩展为 Yii framework 添加 [ApiStore](http://apistore.baidu.com/) 客户端。
