@@ -2,13 +2,13 @@
 
 namespace xutongle\apistore;
 
-use Leaps;
-use Leaps\Helper\Json;
-use Leaps\Base\Service;
-use Leaps\Helper\Inflector;
-use Leaps\Helper\StringHelper;
-use Leaps\Base\NotSupportedException;
-use Leaps\Base\InvalidConfigException;
+use Yii;
+use yii\helpers\Json;
+use yii\base\Service;
+use yii\helpers\Inflector;
+use yii\helpers\StringHelper;
+use yii\base\NotSupportedException;
+use yii\base\InvalidConfigException;
 
 /**
  * BaseClient is a base Api Client class.
@@ -21,7 +21,7 @@ use Leaps\Base\InvalidConfigException;
  * @property string $title Service title.
  * @property array $apiAttributes List of api attributes.
  *
- * @author Paul Klimov <klimov.paul@gmail.com>
+ * @author Xu Tongle <xutongle@gmail.com>
  * @since 2.0
  */
 abstract class BaseClient extends Service implements ClientInterface
@@ -381,7 +381,7 @@ abstract class BaseClient extends Service implements ClientInterface
     }
 
     /**
-     * Performs request to the OAuth API.
+     * Performs request to the API.
      * @param OAuthToken $accessToken actual access token.
      * @param string $url absolute API URL.
      * @param string $method request method.
@@ -390,5 +390,8 @@ abstract class BaseClient extends Service implements ClientInterface
      * @return array API response.
      * @throws Exception on failure.
      */
-    abstract protected function apiInternal($url, $method, array $params, array $headers);
+    protected function apiInternal($url, $method, array $params, array $headers)
+    {
+        return $this->sendRequest($method, $url, $params, $headers);
+    }
 }
