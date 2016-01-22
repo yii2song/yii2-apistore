@@ -29,3 +29,10 @@ or add
 ```
 
 to the `require` section of your composer.json.
+
+注意:本扩展的二次开发非常简单,我只做了百度的手机归属地查询和身份证查询,这两个就一个方法,只要继承Baidu类并实现get方法即可无限扩展百度的API,
+当然也有建大的办法,即直接使用百度类作为api类,获取到实例后如下即可:
+````
+$response = $baidu->api('apistore/mobilenumber/mobilenumber', 'GET', ['phone' => $mobile]);
+return $response;
+````
