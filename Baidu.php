@@ -19,6 +19,6 @@ class Baidu extends BaseClient
     protected function apiInternal($url, $method, array $params, array $headers)
     {
         $headers = array_merge($headers, ['apikey:'.$this->apiKey]);
-        return $this->sendRequest($method, $url, $params, $headers);
+        return parment::apiInternal($url, $method, $params, $headers);
     }
 }
