@@ -45,6 +45,7 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 
 提供了以下几个立即可用的客户端：
 
+- [[xutongle\apistore\Baidu|Baidu]].
 - [[xutongle\apistore\clients\Mobile|Mobile]].
 - [[xutongle\apistore\clients\Id|ID]].
 

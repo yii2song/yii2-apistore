@@ -2,8 +2,8 @@
 ========
 
 ````
-        $a = Yii::$app->apiClientCollection->getApi('id');
-        $b = $a->get('aaa');
+        $mobile = Yii::$app->apiClientCollection->getApi('mobile');
+        $b = $mobile->get('13800138000');
         print_r($b);
         exit;
 ````

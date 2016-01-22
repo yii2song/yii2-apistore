@@ -1,7 +1,7 @@
 用于 Leaps 的 ApiStore 扩展
 =============================
 
-该扩展为 Yii framework 3.0 添加 [ApiStore](http://apistore.baidu.com/) 客户端。
+该扩展为 Yii framework 2.0 添加 [ApiStore](http://apistore.baidu.com/) 客户端。
 
 
 起步
