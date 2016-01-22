@@ -1,0 +1,29 @@
+{
+  "name": "xutongle/yii2-apistore",
+  "description": "百度API接口封装",
+  "type": "library",
+  "keywords": ["apistore", "APIStore", "百度APIStore", "免费接口", "OCR文字识别", "IP地址查询接口"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Xu Tongle",
+      "email": "xutongle@gmail.com"
+    }
+  ],
+  "require": {
+	"php": ">=5.4.0",
+	"yiisoft/yii2": ">=2.0.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.0|^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "xutongle\\apistore\\": ""
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --coverage-text --coverage-clover ./build/logs/clover.xml",
+    "test-win": "bash vendor/bin/phpunit --coverage-text --coverage-clover ./build/logs/clover.xml  --coverage-html ./build/logs/clover.html"
+  }
+}
