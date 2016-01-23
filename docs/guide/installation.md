@@ -49,6 +49,7 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 - [[xutongle\apistore\clients\Mobile|Mobile]].
 - [[xutongle\apistore\clients\Id|ID]].
 - [[xutongle\apistore\clients\Ip|Ip]].
+- [[xutongle\apistore\clients\Weather|Weather]].
 
 配置每个客户端稍有不同。
 
