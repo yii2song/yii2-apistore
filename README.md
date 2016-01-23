@@ -25,7 +25,7 @@ composer require --prefer-dist xutongle/yii2-apistore
 or add
 
 ```json
-"xutongle/yii2-apistore": ">=1.0.1"
+"xutongle/yii2-apistore": ">=1.0.3"
 ```
 
 to the `require` section of your `composer.json`.
