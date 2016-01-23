@@ -17,7 +17,7 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 
 ## 配置应用程序
 
-该扩展安装后，你需要设置验证客户端集合应用程序组件：
+该扩展安装后，你需要设置Api客户端集合应用程序组件：
 
 ```php
 'components' => [
@@ -48,6 +48,7 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 - [[xutongle\apistore\Baidu|Baidu]].
 - [[xutongle\apistore\clients\Mobile|Mobile]].
 - [[xutongle\apistore\clients\Id|ID]].
+- [[xutongle\apistore\clients\Ip|Ip]].
 
 配置每个客户端稍有不同。
 
