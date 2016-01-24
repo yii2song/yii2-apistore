@@ -4,11 +4,9 @@ namespace xutongle\apistore;
 
 use Yii;
 use yii\helpers\Json;
-use yii\base\Service;
+use yii\base\Component;
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
-use yii\base\NotSupportedException;
-use yii\base\InvalidConfigException;
 
 /**
  * BaseClient is a base Api Client class.
@@ -24,7 +22,7 @@ use yii\base\InvalidConfigException;
  * @author Xu Tongle <xutongle@gmail.com>
  * @since 2.0
  */
-abstract class BaseClient extends Service implements ClientInterface
+abstract class BaseClient extends Component implements ClientInterface
 {
 
     const CONTENT_TYPE_JSON = 'json';
@@ -223,7 +221,7 @@ abstract class BaseClient extends Service implements ClientInterface
      */
     protected function defaultCurlOptions()
     {
-        return [CURLOPT_USERAGENT => Leaps::$app->name . ' ApiStore Client',CURLOPT_CONNECTTIMEOUT => 30,CURLOPT_TIMEOUT => 30,CURLOPT_SSL_VERIFYPEER => false];
+        return [CURLOPT_USERAGENT => Yii::$app->name . ' ApiStore Client',CURLOPT_CONNECTTIMEOUT => 30,CURLOPT_TIMEOUT => 30,CURLOPT_SSL_VERIFYPEER => false];
     }
 
     /**
