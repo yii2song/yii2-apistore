@@ -3,7 +3,7 @@
 namespace xutongle\apistore;
 
 use Yii;
-use yii\base\Service;
+use yii\base\Component;
 use yii\base\InvalidParamException;
 
 
@@ -32,7 +32,7 @@ use yii\base\InvalidParamException;
  * @author Xu Tongle <xutongle@gmail.com>
  * @since 3.0
  */
-class Collection extends Service
+class Collection extends Component
 {
   /**
      * @var array list of Api clients with their configuration in format: 'clientId' => [...]
@@ -94,6 +94,6 @@ class Collection extends Service
     protected function createApi($id, $config)
     {
         $config['id'] = $id;
-        return Leaps::createObject($config);
+        return Yii::createObject($config);
     }
 }
