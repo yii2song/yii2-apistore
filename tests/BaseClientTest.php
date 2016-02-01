@@ -1,6 +1,6 @@
 <?php
 
-namespace xutongle/extensions/apistore;
+namespace xutongle\extensions\apistore;
 
 use xutongle\apistore\BaseClient;
 
