@@ -17,5 +17,5 @@ $_SERVER['SCRIPT_FILENAME'] = __FILE__;
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
-Leaps::setAlias('@xutongle/extensions/apistore', __DIR__);
-Leaps::setAlias('@xutongle/apistore', dirname(__DIR__));
+Yii::setAlias('@xutongle/extensions/apistore', __DIR__);
+Yii::setAlias('@xutongle/apistore', dirname(__DIR__));
