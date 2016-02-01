@@ -16,6 +16,17 @@ class Baidu extends BaseClient
     /**
      * @inheritdoc
      */
+    public function init()
+    {
+        parent::init();
+        if (empty ($this->apiKey)) {
+            throw new InvalidConfigException ('The "apiKey" property must be set.');
+        }
+    }
+
+    /**
+     * @inheritdoc
+     */
     protected function apiInternal($url, $method, array $params, array $headers)
     {
         $headers = array_merge($headers, ['apikey:'.$this->apiKey]);
