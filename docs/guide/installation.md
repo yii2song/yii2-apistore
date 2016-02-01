@@ -51,6 +51,7 @@ composer require --prefer-dist xutongle/yii2-apistore "*"
 - [[xutongle\apistore\clients\Ip|Ip]].
 - [[xutongle\apistore\clients\Weather|Weather]].
 - [[xutongle\apistore\clients\Translate|Translate]].
+- [[xutongle\apistore\clients\RTBAsia|RTBAsia]].
 
 配置每个客户端稍有不同。
 
