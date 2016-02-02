@@ -29,6 +29,26 @@ class RTBAsia extends Baidu
     }
 
     /**
+     * 获取IP地址的经纬度
+     * @param $ip
+     * @return array
+     */
+    public function getIpLocation($ip){
+        $response = $this->api('rtbasia/ip_location/ip_location', 'GET', ['ip' => $ip,'v'=>'1.1']);
+        return $response;
+    }
+
+    /**
+     * 获取IP地址的类型
+     * @param $ip
+     * @return array
+     */
+    public function getIpType($ip){
+        $response = $this->api('rtbasia/ip_type/ip_type', 'GET', ['ip' => $ip]);
+        return $response;
+    }
+
+    /**
      * @inheritdoc
      */
     protected function defaultName()
